@@ -4,6 +4,7 @@
 * 使用 XAMPP 來開啟 php 即時測試
 * 連接 Postgre tables
 * 使用 jQuery 插件 DataTables
+* 詳情參閱 HackMD: https://hackmd.io/2nPTZKILQvm-V7LFL-Qt8Q
 
 ## Page1
 * 顯示 Task1-10 按鈕，跳轉到不同的 package_name
@@ -28,5 +29,3 @@
 * 根據 Task 的 package_name 連接不同的 JSON
 * 動態拼接 table
 * suspicious 的 false & true 改成骷髏頭與打勾
-
-* 詳情參閱 HackMD: https://hackmd.io/hD_d9bunTDuGhdPeAi_sMQ
