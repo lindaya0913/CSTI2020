@@ -9,10 +9,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     <style>
         table {
             border-collapse: collapse;
@@ -78,37 +74,37 @@
 </head>
 
 <body>
-    <!-- Task標題 -->
+    <!-- Task標題與json檔案選擇 -->
     <?php 
         if($_GET['task']=="1"){
-            $url_json="./com_rollic_tanglemaster3D.json";
+            $url_json="outputs/com_rollic_tanglemaster3D.json";
             echo "<h1>Task 1</h1>";
         }else if($_GET['task']=="2"){
-            $url_json="./tw_com_quickscanner_invoice.json";
+            $url_json="outputs/tw_com_quickscanner_invoice.json";
             echo "<h1>Task 2</h1>";
         }else if($_GET['task']=="3"){
-            $url_json="./com_tapped_drawrider.json";
+            $url_json="outputs/com_tapped_drawrider.json";
             echo "<h1>Task 3</h1>";
         }else if($_GET['task']=="4"){
-            $url_json="./net_moftech_app.json";
+            $url_json="outputs/net_moftech_app.json";
             echo "<h1>Task 4</h1>";
         }else if($_GET['task']=="5"){
-            $url_json="./homeworkout_homeworkouts_noequipment.json";
+            $url_json="outputs/homeworkout_homeworkouts_noequipment.json";
             echo "<h1>Task 5</h1>";
         }else if($_GET['task']=="6"){
-            $url_json="./mbinc12_mb32.json";
+            $url_json="outputs/mbinc12_mb32.json";
             echo "<h1>Task 6</h1>";
         }else if($_GET['task']=="7"){
-            $url_json="./com_cleanteam_oneboost.json";
+            $url_json="outputs/com_cleanteam_oneboost.json";
             echo "<h1>Task 7</h1>";
         }else if($_GET['task']=="8"){
-            $url_json="./com_lightningstrikegames_fruitsurgeon.json";
+            $url_json="outputs/com_lightningstrikegames_fruitsurgeon.json";
             echo "<h1>Task 8</h1>";
         }else if($_GET['task']=="9"){
-            $url_json="./com_tvbs_news_food_topnews_bestfood_restaurant_news_supertaste_news_ratings_news.json";
+            $url_json="outputs/com_tvbs_news_food_topnews_bestfood_restaurant_news_supertaste_news_ratings_news.json";
             echo "<h1>Task 9</h1>";
         }else if($_GET['task']=="10"){
-            $url_json="./com_yj_xskd.json";
+            $url_json="outputs/com_yj_xskd.json";
             echo "<h1>Task 10</h1>";
         }
     ?>
@@ -379,20 +375,6 @@
                     }
                 }
             }
-            // var $sortable = $('th');
-            // $sortable.on('click', function(){
-            //     console.log("aaa")
-            //     var $this = $(this);
-            //     var asc = $this.hasClass('asc');
-            //     var desc = $this.hasClass('desc');
-            //     $sortable.removeClass('asc').removeClass('desc');
-            //     if (desc || (!asc && !desc)) {
-            //         $this.addClass('asc');
-            //     } else {
-            //         $this.addClass('desc');
-            //     }
-            
-            // });
         }
 
         // Sort Table2

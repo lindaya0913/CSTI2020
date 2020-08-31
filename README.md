@@ -28,3 +28,5 @@
 * 根據 Task 的 package_name 連接不同的 JSON
 * 動態拼接 table
 * suspicious 的 false & true 改成骷髏頭與打勾
+
+* 詳情參閱 HackMD: https://hackmd.io/hD_d9bunTDuGhdPeAi_sMQ

@@ -79,49 +79,49 @@
 </head>
 
 <body>
-    <!-- Task標題 -->
+    <!-- Task標題與json檔案選擇 -->
     <?php 
         $url="";
         $url_json="";
         if($_GET['task']=="1"){
                 $url="1";
-                $url_json="./com_rollic_tanglemaster3D.json";
+                $url_json="outputs/com_rollic_tanglemaster3D.json";
                 echo "<h1>Task 1</h1>";
             }else if($_GET['task']=="2"){
                 $url="2";
-                $url_json="./tw_com_quickscanner_invoice.json";
+                $url_json="outputs/tw_com_quickscanner_invoice.json";
                 echo "<h1>Task 2</h1>";
             }else if($_GET['task']=="3"){
                 $url="3";
-                $url_json="./com_tapped_drawrider.json";
+                $url_json="outputs/com_tapped_drawrider.json";
                 echo "<h1>Task 3</h1>";
             }else if($_GET['task']=="4"){
                 $url="4";
-                $url_json="./net_moftech_app.json";
+                $url_json="outputs/net_moftech_app.json";
                 echo "<h1>Task 4</h1>";
             }else if($_GET['task']=="5"){
                 $url="5";
-                $url_json="./homeworkout_homeworkouts_noequipment.json";
+                $url_json="outputs/homeworkout_homeworkouts_noequipment.json";
                 echo "<h1>Task 5</h1>";
             }else if($_GET['task']=="6"){
                 $url="6";
-                $url_json="./mbinc12_mb32.json";
+                $url_json="outputs/mbinc12_mb32.json";
                 echo "<h1>Task 6</h1>";
             }else if($_GET['task']=="7"){
                 $url="7";
-                $url_json="./com_cleanteam_oneboost.json";
+                $url_json="outputs/com_cleanteam_oneboost.json";
                 echo "<h1>Task 7</h1>";
             }else if($_GET['task']=="8"){
                 $url="8";
-                $url_json="./com_lightningstrikegames_fruitsurgeon.json";
+                $url_json="outputs/com_lightningstrikegames_fruitsurgeon.json";
                 echo "<h1>Task 8</h1>";
             }else if($_GET['task']=="9"){
                 $url="9";
-                $url_json="./com_tvbs_news_food_topnews_bestfood_restaurant_news_supertaste_news_ratings_news.json";
+                $url_json="outputs/com_tvbs_news_food_topnews_bestfood_restaurant_news_supertaste_news_ratings_news.json";
                 echo "<h1>Task 9</h1>";
             }else if($_GET['task']=="10"){
                 $url="10";
-                $url_json="./com_yj_xskd.json";
+                $url_json="outputs/com_yj_xskd.json";
                 echo "<h1>Task 10</h1>";
         }
     ?>
