@@ -26,7 +26,7 @@
             background-color: rgb(211, 44, 44);
             z-index: 20;
             border-radius: 100%;
-            transform: translateX(-50%);
+            transform: translate(-50%,-50%);
             cursor: pointer;
         }
         /* 點點的訊息 */
@@ -161,13 +161,15 @@
                     var obj = jQuery.parseJSON(request.responseText);
                     
                     Object.entries(obj).forEach(element => {/*印出點點與點點的訊息內容*/
-                        var area_template = `<div class="area"style="
+                        var area_template = `<div class="area" style="
                                                 bottom: ${42.9 + element[1]['latitude'] * 0.44681}%; 
                                                 left: ${element[1]['longitude'] < 0 ? 45.2 - Math.abs(element[1]['longitude']) * 0.29339 : 45.2 + element[1]['longitude'] * 0.29339 }%; 
                                                 ">
-                                                    <div class="area_dot"style="
+                                                    <div class="area_dot" style="
                                                         opacity: 0.6;
-                                                        background-color: ${element[1]['malicious'] != false ? "green" : "rgb(211, 44, 44)"};
+                                                        background-color: ${element[1]['malicious'] == true ? "rgb(44, 211, 44)" : "rgb(211, 44, 44)"};
+                                                        height: ${element[1]['connection_times'] > 2000 ? 35 : element[1]['connection_times'] > 1000 ? 30 : element[1]['connection_times'] > 500 ? 25 : element[1]['connection_times'] > 200 ? 20 : element[1]['connection_times'] > 100 ? 15 : element[1]['connection_times'] > 50 ? 10 : 5}px;
+                                                        width: ${element[1]['connection_times'] > 2000 ? 35 : element[1]['connection_times'] > 1000 ? 30 : element[1]['connection_times'] > 500 ? 25 : element[1]['connection_times'] > 200 ? 20 : element[1]['connection_times'] > 100 ? 15 : element[1]['connection_times'] > 50 ? 10 : 5}px;
                                                     ">
                                                     </div>
                                                     <div class="area_info_container">
