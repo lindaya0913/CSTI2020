@@ -165,13 +165,16 @@
                                                 bottom: ${42.9 + element[1]['latitude'] * 0.44681}%; 
                                                 left: ${element[1]['longitude'] < 0 ? 45.2 - Math.abs(element[1]['longitude']) * 0.29339 : 45.2 + element[1]['longitude'] * 0.29339 }%; 
                                                 ">
-                                                    <div class="area_dot">
+                                                    <div class="area_dot"style="
+                                                        opacity: 0.6;
+                                                        background-color: ${element[1]['malicious'] != false ? "green" : "rgb(211, 44, 44)"};
+                                                    ">
                                                     </div>
                                                     <div class="area_info_container">
                                                         <div class="area_info">
                                                         ip: ${element[0]}<br>
                                                         connection_times: ${element[1]['connection_times']}<br>
-                                                        malicious: ${element[1]['malicious']}<br>
+                                                        suspicious: ${element[1]['malicious']}<br>
                                                         country: ${element[1]['country']}<br>
                                                         </div>
                                                     </div>

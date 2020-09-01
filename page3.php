@@ -293,6 +293,7 @@
                         //document.getElementById("tbody_id2").innerHTML = trStr2;
                         $('#tbody_id2').append(trStr2);
                         $('#table_id2').DataTable({
+                            "order": [ 4, 'asc' ],
                             rowCallback: function(row, data, index){
                                 //suspicious
                                 if(data[4] == 'true'){
@@ -348,7 +349,7 @@
                         }else if (data[3] == 'normal'){
                             $(row).find('td:eq(3)').css('color', 'Green');
                         }else{
-                            $(row).find('td:eq(3)').css('color', '#ffb133');
+                            $(row).find('td:eq(3)').css('color', '#e5a60e');
                         }
                     },
                 });
