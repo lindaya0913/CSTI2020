@@ -10,6 +10,7 @@
 * 顯示 Task1-10 按鈕，跳轉到不同的 package_name
 * 點選 Task 跳轉到 Page2
 
+![image](https://github.com/lindaya0913/CSTI2020/blob/master/images/page1.png)
 ## Page2
 * 根據 JSON 內容顯示 attributes
 * 將每一點視覺化呈現於地圖上
@@ -18,6 +19,7 @@
 * 根據 connection_times 的多寡做 dot 大小的區隔
 * 點選詳細資訊跳轉到 Page3
 
+![image](https://github.com/lindaya0913/CSTI2020/blob/master/images/page2.png)
 ## Page3
 ### Table1(上)
 * 連接 Postgre 將五個 tables select 
@@ -33,3 +35,5 @@
 * 動態拼接 table
 * 以 suspicious 當 order
 * suspicious 的 false & true 改成骷髏頭與打勾
+
+![image](https://github.com/lindaya0913/CSTI2020/blob/master/images/page3.png)
